@@ -1,11 +1,11 @@
 import React from "react";
 
-export const Recursos = () => {
+export const Tests = () => {
 
   return (
         <div>
 
-Recursos
+Tests
         </div>
     );
 };

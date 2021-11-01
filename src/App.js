@@ -9,8 +9,11 @@ import { Empresa } from "./components/Empresa.jsx";
 import { Testimonios } from "./components/Testimonios.jsx";
 import { Contacto } from "./components/Contacto.jsx";
 import { Recursos } from "./components/Recursos.jsx";
+import { Tests } from "./components/Tests.jsx";
+import { Profile } from "./components/Profile.jsx";
+import { Patrocinadores } from "./components/Patrocinadores.jsx";
 import "./App.css";
-import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 function App() {
   const { isAuthenticated, isLoading } = useAuth0();
@@ -23,26 +26,18 @@ function App() {
       { isAuthenticated ? (
         <>
           <Header />
-            <Router> 
-              <Switch>
-                <Route
-                  exact
-                  path="/"
-                  render={() => {
-                      return (
-                        <Redirect to="/home" component={Home}/> 
-                      )
-                  }}
-                />
+            <Router>
+                <Route exact path="/" component={Home} />
                 <Route exact path="/home" component={Home} />
                 <Route exact path="/nosotros" component={Nosotros}/>
                 <Route exact path="/empresa" component={Empresa}/>
                 <Route path="/testimonios" component={Testimonios}/>
                 <Route path="/contacto" component={Contacto}/>
                 <Route path="/recursos" component={Recursos}/>
-              </Switch>
+                <Route path="/tests" component={Tests}/>
+                <Route path="/perfil" component={Profile}/>
+                <Route path="/patrocinadores" component={Patrocinadores}/>
             </Router>
-            
           <Footer />
         </>
       ) : (

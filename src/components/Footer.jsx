@@ -8,7 +8,7 @@ export const Footer = () => {
         <div className="container text-center text-md-left">
           <div className="row">
             <div className="col-md-3 mx-auto">
-              <h6 className="font-weight-bold text-uppercase mt-3 mb-4"><a className="nosotros" href="nosotros">Nosotros</a></h6>
+              <h6 className="font-weight-bold text-uppercase mt-3 mb-4 footer-titles"><a className="nosotros" href="nosotros">Nosotros</a></h6>
   
               <ul className="list-unstyled">
               <li>
@@ -18,7 +18,7 @@ export const Footer = () => {
                   <a href="empresa">Empresa</a>
                 </li> 
                 <li>
-                  <a href="#!">Patrocinadores</a>
+                  <a href="patrocinadores">Patrocinadores</a>
                 </li>
               </ul>
             </div>
@@ -26,7 +26,7 @@ export const Footer = () => {
             <hr className="clearfix w-100 d-md-none" />
   
             <div className="col-md-3 mx-auto">
-              <h6 className="font-weight-bold text-uppercase mt-3 mb-4"><a href="testimonios">Testimonios</a></h6>
+              <h6 className="font-weight-bold text-uppercase mt-3 mb-4 footer-titles"><a href="testimonios">Testimonios</a></h6>
   
               <ul className="list-unstyled">
                 <li>
@@ -47,7 +47,7 @@ export const Footer = () => {
             <hr className="clearfix w-100 d-md-none" />
   
             <div className="col-md-3 mx-auto">
-              <h6 className="font-weight-bold text-uppercase mt-3 mb-6"><a href="recursos">Recursos Gratuitos</a></h6>
+              <h6 className="font-weight-bold text-uppercase mt-3 mb-4 footer-titles"><a href="recursos">Recursos</a></h6>
   
               <ul className="list-unstyled">
                 <li>
@@ -68,7 +68,7 @@ export const Footer = () => {
             <hr className="clearfix w-100 d-md-none" />
   
             <div className="col-md-3 mx-auto">
-              <h6 className="font-weight-bold text-uppercase mt-3 mb-4"><a className="contacto" href="/contacto">CONTACTO</a></h6>
+              <h6 className="font-weight-bold text-uppercase mt-3 mb-4 footer-titles"><a className="contacto" href="/contacto">CONTACTO</a></h6>
   
               <ul className="list-unstyled">
                 <li>

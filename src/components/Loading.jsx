@@ -1,10 +1,10 @@
 import React from "react";
-import logo from '../icon.png';
+import logo from '../img/spinning-circles.svg';
 
 export const Loading = () => {
     return (
-        <div className="main-login-div">
-            <img src={logo} className="App-logo" alt="logo" />
+        <div className="loading-logo">
+            <img src={logo} alt="loading"/>
             <h1>Loading . . .</h1>
         </div>
     );

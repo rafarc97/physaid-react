@@ -15,10 +15,9 @@ export const Header = () => {
       </h2>
 
       <nav className="nav">
-        <a href="nosotros"> Nosotros </a>
-        <a href="testimonios"> Testimonios </a>
         <a href="recursos"> Recursos </a>
-        <a href="contacto"> Contacto </a>
+        <a href="tests"> Tests </a>
+        <a href="perfil"> Perfil </a>
         <button onClick={() => logout({ returnTo: window.location.origin})}> Logout </button>
       </nav>
     </header>
