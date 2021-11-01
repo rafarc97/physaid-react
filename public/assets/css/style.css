@@ -158,68 +158,7 @@ body{
     margin: 0 auto;
   }
 
-  .hello {
-    background: linear-gradient(rgba(0, 0, 0, 0.123), rgba(0, 0, 0, 0.157)),
-      url("../../../src/img/carousel1.jpeg");
-    background-size: cover;
   
-    width: 100%;
-    height: 85vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .hello article {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .hello img {
-    max-width: 200px;
-    width: 40%;
-    max-height: 200px;
-    height: auto;
-    border-radius: 100%;
-  }
-  
-  .hello h1,
-  h2 {
-    color: white;
-    font-size: 5.5em;
-    text-align: center;
-  }
-  
-  .hello h1 {
-    font-weight: 800;
-  }
-  
-  .hello h2 {
-    font-size: 2.5rem;
-  }
-  .presentation {
-    margin: 20px;
-    text-align: center;
-  }
-  
-  .presentation span {
-    font-weight: bold;
-  }
-  
-  .presentation .cv-presentation {
-    color: var(--orange);
-    transition: all 0.5s ease;
-  }
-  
-  .img-home{
-    /* display: none; */
-  }
-
   .login-bottom:hover{
     color: white !important;
     background-color: #000;
@@ -292,216 +231,6 @@ body{
     transform: scale(0);
     transition: 0.5s;
   }
-  
-  /* .social a:hover:before{
-      transform: scale(1);
-  } */
-  
-  /* CV */
-  .cv-index {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: 1.5rem;
-  }
-  .cv-index a:hover {
-    color: var(--orange);
-    text-decoration: none;
-    transition: all 0.3s ease-out;
-  }
-  
-  .cv-index a:hover {
-    box-shadow: inset 0 -2px 0 var(--orange);
-    opacity: 0.8;
-  }
-  
-  .hello-cv {
-    background: none;
-  }
-  
-  .hello-cv article h1 {
-    margin-top: 40px;
-    color: #333;
-    font-size: 3rem;
-  }
-  .hello-cv article p {
-    font-size: 1.5rem;
-  }
-  .hello-cv article p i {
-    margin: 0;
-  }
-  .hello-cv article a {
-    font-size: 1.7rem;
-    margin-top: 30px;
-    text-decoration: none;
-    color: var(--orange);
-    transition: all 0.3s ease-out;
-  }
-  .hello-cv article a:hover {
-    box-shadow: inset 0 -2px 0 var(--orange);
-    opacity: 0.8;
-  }
-  
-  .section {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0 50px;
-  }
-  .section h2 {
-    width: 100%;
-    text-align: right;
-    font-family: "Raleway", sans-serif;
-    font-weight: 900;
-    font-size: 3rem;
-    color: #333;
-  }
-  .section ul {
-    margin: 30px 0;
-    padding-left: 40px;
-  }
-  .section li {
-    font-size: 1.7rem;
-    list-style-type: disc;
-  }
-  
-  .cv-contact li a {
-    color: var(--orange);
-    text-decoration: none;
-    transition: all 0.3s ease-out;
-  }
-  
-  .cv-contact li a:hover {
-    box-shadow: inset 0 -2px 0 var(--orange);
-    opacity: 0.8;
-  }
-  
-  .cv-about h2 {
-    margin-bottom: 10px;
-  }
-  .cv-about p {
-    margin: 15px 0;
-    font-size: 1.7rem;
-  }
-  #tecnologias h2 {
-    margin-bottom: 20px;
-  }
-  #tecnologias aside {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  #tecnologias aside img {
-    width: 11vw;
-    height: 20vh;
-  }
-  #projects figure {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-  }
-  #projects figure img {
-    width: 150px;
-    height: 100px;
-    margin-right: 20px;
-  }
-  #projects figure figcaption {
-    font-weight: bold;
-  }
-  #experiencia-profesional h2 {
-    margin-bottom: 30px;
-  }
-  
-  .webimpacto-img {
-    width: 100px !important;
-    height: 100px !important;
-  }
-  
-  .webimpacto-img ~ figcaption {
-    margin-left: 50px;
-  }
-  #educacion li a {
-    color: var(--orange);
-    transition: all 0.3s ease-out;
-  }
-  #educacion li a:hover {
-    color: rgb(240, 195, 128);
-  }
-  
-  /* PROYECTOS */
-  .projects-category h1 {
-    font-size: 4rem;
-    font-weight: 900;
-    color: #333;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-  .projects-category p {
-    font-size: 1.8rem;
-  }
-  .projects-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 100%;
-    border-radius: 5px;
-  }
-  
-  .project {
-    width: 300px;
-    height: 450px;
-    margin: 25px 25px;
-    background-color: #f2f2f2;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    border-radius: 5px;
-    border: 1px solid black;
-    box-shadow: 1px 1px 5px 1px #333;
-    /* transition: all 20s ease; */
-    /* animation-name: efecto;
-      animation-duration: 2s;
-      animation-timing-function: ease-in;
-      animation-iteration-count: infinite; */
-  }
-  /* .project:hover{
-      transform: rotate(-360deg);
-  } */
-  .project div p.text-right {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-  }
-  .project div p.text-right a {
-    color: var(--orange);
-    transition: all 0.3s ease;
-  }
-  .project div p.text-right a:hover {
-    opacity: 0.8;
-  }
-  
-  .project div h3 {
-    font-weight: bold;
-    padding: 10px;
-  }
-  .project div p {
-    padding: 10px;
-  }
-  .img-project {
-    width: 300px;
-    border-radius: 5px;
-    transition: all 0.3s ease-out;
-  }
-  .img-project:hover {
-    opacity: 0.5;
-    box-shadow: inset 0 -1px 0 var(--orange);
-  }
 
   .empresa-div, .testimonio-div{
     width: 80%;
@@ -518,58 +247,7 @@ body{
     width: 30%;
   }
 
-  /* AHORA */
   
-  .ahora h1 {
-    font-size: 4rem;
-    font-weight: 900;
-    color: #333;
-    margin-bottom: 50px;
-  }
-  
-  .ahora .section p {
-    color: #333;
-    margin-top: 20px;
-    font-size: 1.8rem;
-  }
-  
-  .section-2-ahora h3 {
-    color: #333;
-    font-weight: 900;
-  }
-  .section-2-ahora ol {
-    color: white;
-    background-color: #1f1f1f;
-    margin: 30px 20px;
-  }
-  .section-2-ahora ol li:first-child {
-    margin-top: 30px;
-  }
-  .section-2-ahora ol li {
-    list-style-type: decimal;
-    margin-left: 30px;
-  }
-  .section-2-ahora ol li a:link {
-    color: var(--orange);
-  }
-  .section-2-ahora ol li a:visited {
-    color: var(--orange);
-  }
-  .section-2-ahora ol > a {
-    font-size: 1.2rem;
-    color: white;
-    background-color: var(--orange);
-    border: none;
-    margin: 10px 10px;
-    transition: all 0.3s ease-out;
-  }
-  .section-2-ahora ol > a small {
-    font-size: 1.3rem;
-    font-weight: bold !important;
-  }
-  .section-2-ahora ol > a:hover {
-    background-color: red;
-  }
   
   /* FORM */
   .form-container {
@@ -664,9 +342,6 @@ body{
     .logo .logo_a {
       justify-content: center;
     }
-    .hello article * {
-      margin: 0 25px;
-    }
     .section {
       min-height: 100vh;
     }
@@ -675,10 +350,6 @@ body{
     }
     .section li {
       font-size: 1.4rem;
-    }
-    .cv-about p {
-      margin: 10px 0;
-      font-size: 1.3rem;
     }
   }
   
@@ -689,18 +360,7 @@ body{
       height: 20vh;
       justify-content: space-around;
     }
-    .hello {
-      height: 80vh;
-      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url("../img/xena-background-small.jpeg");
-    }
-    .hello article {
-      margin: 0px;
-      font-size: 1rem;
-    }
-    .hello-cv {
-      background: none;
-    }
+ 
     .logo,
     .nav {
       width: 100%;
@@ -719,74 +379,9 @@ body{
     .logo span {
       font-size: 1.7rem;
     }
-    .hello article * {
-      margin: 0 0px;
-    }
-    .hello h1,
-    h2 {
-      color: white;
-      font-size: 4rem;
-      text-align: center;
-    }
-    .hello h2 {
-      font-size: 2rem;
-    }
     .nav a, .nav button {
       font-size: 1rem;
       margin: 0 0px;
-    }
-
-    
-    .section {
-      min-height: 50vh;
-      margin: 60px 40px;
-    }
-    .section h2 {
-      text-align: left;
-    }
-    .cv-about p {
-      margin: 10px 0;
-      font-size: 1.25rem;
-    }
-    .cv-edu li,
-    .cv-contact li,
-    .cv-skills li {
-      font-size: 1.4rem;
-    }
-    .projects-category h1 {
-      font-size: 2rem;
-      font-weight: 900;
-      color: #333;
-      margin-top: 30px;
-      margin-bottom: 30px;
-    }
-    .projects-category p {
-      font-size: 1.5rem;
-    }
-  
-    .ahora h1 {
-      font-size: 3rem;
-      margin-bottom: 0px;
-    }
-    .section-ahora {
-      margin: 20px 10px;
-    }
-    .ahora .section p {
-      font-size: 1.4rem;
-    }
-    .section-ahora img {
-      margin: 0;
-      padding: 0;
-    }
-    .section-2-ahora {
-      margin: 10px 5px;
-    }
-    .section-2-ahora ol {
-      margin: 10px 0px;
-    }
-    .section-2-ahora ol > a small {
-      font-size: 1rem;
-      font-weight: bold !important;
     }
     .form-container {
       font-size: 1rem;
@@ -805,9 +400,6 @@ body{
   }
   
   @media (max-width: 350px) {
-    .section-2-ahora ol > a small {
-      font-size: 0.8rem;
-      font-weight: bold !important;
-    }
+    
   }
   
