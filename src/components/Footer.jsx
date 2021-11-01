@@ -11,14 +11,11 @@ export const Footer = () => {
               <h6 className="font-weight-bold text-uppercase mt-3 mb-4"><a className="nosotros" href="nosotros">Nosotros</a></h6>
   
               <ul className="list-unstyled">
-                <li>
-                  <a className="historia" href="/nosotros">Nuestra historia</a>
-                </li>
-                <li>
-                  <a href="#!">Hisotria</a>
-                </li>
+              <li>
+                  <a href="nosotros">Quienes Somos</a>
+                </li> 
                  <li>
-                  <a href="nosotros">Empresa</a>
+                  <a href="empresa">Empresa</a>
                 </li> 
                 <li>
                   <a href="#!">Patrocinadores</a>

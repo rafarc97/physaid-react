@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   height: 100%;
 }
@@ -37,6 +37,11 @@ html{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: white;
+}
+
+.main-login-div img{
+  display: block;
 }
 
 @media (prefers-reduced-motion: no-preference) {

@@ -8,7 +8,7 @@ export const LoginButton = () => {
     return (
         <div className="main-login-div">
             <img src={logo} className="App-logo" alt="logo" />
-            <button type="button" className="btn btn-success login-bottom" onClick={() => loginWithRedirect()}> Login </button>
+            <button type="button" className="btn login-bottom" onClick={() => loginWithRedirect()}> Login </button>
         </div>
     );
 }

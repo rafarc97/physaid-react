@@ -4,7 +4,13 @@ html {
     --orange: (#84E49F);
     box-sizing: border-box;
     font-size: 16px;
+    width: 100%;
+    height: 100%;
   }
+body{
+  width: 100%;
+  height: 100%;
+}
   
   *,
   *:before,
@@ -42,6 +48,10 @@ html {
   a:active {
     text-decoration: none;
     color: #84E49F;
+  }
+
+  a:hover, button:hover{
+    color: white !important;
   }
   
 
@@ -143,6 +153,11 @@ html {
     box-shadow: inset 0 -2px 0 var(--orange);
   }
 
+  .carousel img {
+    width: 70% !important;
+    margin: 0 auto;
+  }
+
   .hello {
     background: linear-gradient(rgba(0, 0, 0, 0.123), rgba(0, 0, 0, 0.157)),
       url("../../../src/img/carousel1.jpeg");
@@ -203,6 +218,11 @@ html {
   
   .img-home{
     /* display: none; */
+  }
+
+  .login-bottom:hover{
+    color: white !important;
+    background-color: #000;
   }
 
   footer {
@@ -482,7 +502,22 @@ html {
     opacity: 0.5;
     box-shadow: inset 0 -1px 0 var(--orange);
   }
+
+  .empresa-div, .testimonio-div{
+    width: 80%;
+    color: white;
+  }
   
+  .img-nosotros-div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+  .img-nosotros-div > img{
+    width: 30%;
+  }
+
   /* AHORA */
   
   .ahora h1 {
@@ -538,18 +573,23 @@ html {
   
   /* FORM */
   .form-container {
-    background-color: rgb(238, 197, 161);
+    background-color: #84E49F;
     border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px auto;
-    width: 35%;
+    margin: 40px auto;
+    padding: 40px 0;
+    width: 30%;
     max-width: 700px;
-    height: 70vh;
+    /* height: 60vh; */
     border-radius: 5px;
     font-weight: 900;
     box-shadow: 1px 1px 12px 2px #333;
+  }
+
+  .form-group{
+    margin-top: 10px;
   }
   
   .btn {
@@ -562,6 +602,10 @@ html {
   .btn.btn-primary:hover {
     color: black;
     background-color: rgb(255, 190, 68);
+  }
+
+  .btn-form{
+    margin-top: 20px;
   }
   
   @media (max-width: 767px) {
@@ -580,6 +624,7 @@ html {
       height: 15vh;
     }
     .form-container {
+      
       font-size: 1rem;
       width: 55%;
     }
@@ -594,10 +639,10 @@ html {
     }
   }
   
-  @media (max-width: 1020px) and (min-width: 481px) {
+  @media (max-width: 1040px) and (min-width: 481px) {
     .header {
       margin-top: 5px;
-      flex-flow: column wrap;
+      flex-flow: row wrap;
       height: 20vh;
       justify-content: space-around;
     }
