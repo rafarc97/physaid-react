@@ -106,6 +106,11 @@ html{
   font-weight: 800;
 }
 
+.footer-copyright{
+  margin-top: 30px;
+  font-weight: 800;
+}
+
 /* .loading-logo img, .loading-logo h1{
   display: block;
 } */
@@ -261,6 +266,7 @@ body {
 
 .logo .logo_a img {
   max-height: 70px;
+  max-width: 70px;
   flex-grow: 0.1;
   margin-right: 10px;
 }
@@ -455,7 +461,7 @@ footer .social a {
   }
   .carousel img {
     margin: 0 auto !important;
-    margin-top: 200px !important;
+    margin-top: 30px !important;
     height: 100% !important;
     width: 100% !important;
   }
@@ -537,7 +543,7 @@ footer .social a {
 
   .carousel img {
     margin: 0 auto !important;
-    margin-top: 120px !important;
+    margin-top: 5px !important;
    
     width: 100% !important;
   }

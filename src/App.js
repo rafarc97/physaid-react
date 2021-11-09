@@ -27,16 +27,16 @@ function App() {
         <>
           <Header />
             <Router>
-                <Route exact path="/" component={Home} />
-                <Route exact path="/home" component={Home} />
-                <Route exact path="/nosotros" component={Nosotros}/>
-                <Route exact path="/empresa" component={Empresa}/>
-                <Route path="/testimonios" component={Testimonios}/>
-                <Route path="/contacto" component={Contacto}/>
-                <Route path="/recursos" component={Recursos}/>
-                <Route path="/tests" component={Tests}/>
-                <Route path="/perfil" component={Profile}/>
-                <Route path="/patrocinadores" component={Patrocinadores}/>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/home" component={Home} />
+              <Route exact path="/nosotros" component={Nosotros}/>
+              <Route exact path="/empresa" component={Empresa}/>
+              <Route path="/testimonios" component={Testimonios}/>
+              <Route path="/contacto" component={Contacto}/>
+              <Route path="/recursos" component={Recursos}/>
+              <Route path="/tests" component={Tests}/>
+              <Route path="/perfil" component={Profile}/>
+              <Route path="/patrocinadores" component={Patrocinadores}/>
             </Router>
           <Footer />
         </>
