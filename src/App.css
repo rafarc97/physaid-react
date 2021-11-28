@@ -4,8 +4,9 @@
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 100%;
+  height: 70%;
 }
+
 html{
   display: flex;
   justify-content: center;
@@ -431,6 +432,33 @@ footer .social a {
   background-color: white;
 }
 
+.tests-form{
+  margin-top: 50px;
+  color: white
+}
+
+.tests-form legend{
+  color: #84E49F;
+  font-weight: 800;
+  font-size: 28px;
+}
+
+.tests-form .label-si{
+  color: #84E49F
+}
+
+.tests-form .label-no{
+  color: red;
+}
+
+.tests-form hr{
+  border-top: 1px solid white;
+}
+
+.tests-form b{
+  font-size: 25px;
+}
+
 .btn-form{
   margin-top: 20px;
 }
@@ -500,6 +528,11 @@ footer .social a {
   .section li {
     font-size: 1.4rem;
   }
+
+  .tests-form{
+    margin: 50px 30px;  
+  
+  }
 }
 
 @media (max-width: 480px) {
@@ -545,6 +578,10 @@ footer .social a {
     margin-top: 5px !important;
    
     width: 100% !important;
+  }
+
+  .tests-form{
+    margin: 50px 30px;  
   }
 }
 
