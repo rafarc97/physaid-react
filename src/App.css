@@ -459,6 +459,15 @@ footer .social a {
   font-size: 25px;
 }
 
+.facebook img{
+  width: 16px;
+  height: 16px;
+}
+
+i{
+  font-style: normal;
+}
+
 .btn-form{
   margin-top: 20px;
 }

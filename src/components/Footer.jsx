@@ -33,10 +33,10 @@ export const Footer = () => {
                   <a href="#!">Rosalía</a>
                 </li>
                 <li>
-                  <a href="#!">Bryan</a>
+                  <a href="#!">Carlos</a>
                 </li>
                 <li>
-                  <a href="#!">Maeve</a>
+                  <a href="#!">Adrián</a>
                 </li>
                 <li>
                   <a href="#!">Y más !</a>
@@ -72,10 +72,10 @@ export const Footer = () => {
   
               <ul className="list-unstyled">
                 <li>
-                  <a href="mailto:physaidd@gmail.com"><i className="material-icons mdi-2x mail-icon">mail</i></a>
+                  <a href="mailto:physaidd@gmail.com"><i className="material-icons mdi-2x mail-icon">Email 📩</i></a>
                 </li>
                 <li>
-                  <a href="https://www.facebook.com/profile.php?id=100074198019550" target="blank"><i className="mdi mdi-facebook mdi-attachment mdi-2x facebook-icon"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100074198019550" target="blank"><i className="mdi mdi-facebook facebook mdi-attachment mdi-2x facebook-icon">Facebook &nbsp;<img src="//cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-facebook.svg" data-src="//cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-facebook.svg"></img></i></a>
                 </li>
               </ul>
             </div>
