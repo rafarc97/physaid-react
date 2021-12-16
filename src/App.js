@@ -18,7 +18,6 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 function App() {
   const { isAuthenticated, isLoading } = useAuth0();
 
-  console.log(isLoading, isAuthenticated);
   if(isLoading) return ( <div className="loading"><Loading></Loading></div> );
   
 

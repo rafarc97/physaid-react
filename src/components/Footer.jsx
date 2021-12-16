@@ -5,7 +5,7 @@ export const Footer = () => {
 
   return (
     <footer className="page-footer font-small indigo">
-        <div className="container text-center text-md-left">
+        <div className="container text-center text-md-center">
           <div className="row">
             <div className="col-md-3 mx-auto">
               <h6 className="font-weight-bold text-uppercase mt-3 mb-4 footer-titles"><a className="nosotros" href="nosotros">Nosotros</a></h6>

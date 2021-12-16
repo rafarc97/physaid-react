@@ -7,7 +7,6 @@ export const Profile = () => {
     return (
         isAuthenticated && (
             <div>
-                <p>{console.log(user)}</p>
                 <img src={user.picture} alt={user.name}></img>
                 <h2>{user.name}</h2>
                 <p>Email: {user.email}</p>
