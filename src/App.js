@@ -10,10 +10,11 @@ import { Testimonios } from "./components/Testimonios.jsx";
 import { Contacto } from "./components/Contacto.jsx";
 import { Recursos } from "./components/Recursos.jsx";
 import { Tests } from "./components/Tests.jsx";
+import { TestResults } from "./components/TestResults.jsx";
 import { Profile } from "./components/Profile.jsx";
 import { Patrocinadores } from "./components/Patrocinadores.jsx";
 import "./App.css";
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   const { isAuthenticated, isLoading } = useAuth0();
@@ -26,18 +27,19 @@ function App() {
       { isAuthenticated ? (
         <>
           <Header />
-            <Router>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/home" component={Home} />
-              <Route exact path="/nosotros" component={Nosotros}/>
-              <Route exact path="/empresa" component={Empresa}/>
-              <Route path="/testimonios" component={Testimonios}/>
-              <Route path="/contacto" component={Contacto}/>
-              <Route path="/recursos" component={Recursos}/>
-              <Route path="/tests" component={Tests}/>
-              <Route path="/perfil" component={Profile}/>
-              <Route path="/patrocinadores" component={Patrocinadores}/>
-            </Router>
+            <Routes>
+              <Route exact path="/" element={<Home/>} />
+              <Route exact path="/home" element={<Home/>} />
+              <Route exact path="/nosotros" element={<Nosotros/>}/>
+              <Route exact path="/empresa" element={<Empresa/>}/>
+              <Route path="/testimonios" element={<Testimonios/>}/>
+              <Route path="/contacto" element={<Contacto/>}/>
+              <Route path="/recursos" element={<Recursos/>}/>
+              <Route path="/tests" element={<Tests/>}/>
+              <Route path="/test-results" element={<TestResults/>}/>
+              <Route path="/perfil" element={<Profile/>}/>
+              <Route path="/patrocinadores" element={<Patrocinadores/>}/>
+            </Routes>
           <Footer />
         </>
       ) : (
