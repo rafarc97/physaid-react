@@ -10,7 +10,6 @@ import { Testimonios } from "./components/Testimonios.jsx";
 import { Contacto } from "./components/Contacto.jsx";
 import { Recursos } from "./components/Recursos.jsx";
 import { Tests } from "./components/Tests.jsx";
-import { TestResults } from "./components/TestResults.jsx";
 import { Profile } from "./components/Profile.jsx";
 import { Patrocinadores } from "./components/Patrocinadores.jsx";
 import "./App.css";
@@ -36,7 +35,6 @@ function App() {
               <Route path="/contacto" element={<Contacto/>}/>
               <Route path="/recursos" element={<Recursos/>}/>
               <Route path="/tests" element={<Tests/>}/>
-              <Route path="/test-results" element={<TestResults/>}/>
               <Route path="/perfil" element={<Profile/>}/>
               <Route path="/patrocinadores" element={<Patrocinadores/>}/>
             </Routes>
