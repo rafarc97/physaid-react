@@ -9,7 +9,7 @@ export const Tests = () => {
 
   const { user, isAuthenticated } = useAuth0();
 
-  const url = "http://cuentamomento.pythonanywhere.com/internal/tests";
+  const url = "https://cuentamomento.pythonanywhere.com/internal/tests/";
 
   const [data, setData] = useState({
   })
