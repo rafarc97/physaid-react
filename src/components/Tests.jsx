@@ -9,7 +9,7 @@ export const Tests = () => {
 
   const { user, isAuthenticated } = useAuth0();
 
-  const url = "";
+  const url = "http://cuentamomento.pythonanywhere.com/internal/tests";
 
   const [data, setData] = useState({
   })
@@ -30,7 +30,8 @@ export const Tests = () => {
 
 
     Axios.post(url, {
-      test: my_array
+      tests: my_array,
+      email: "rafa@rafa.com"
     })
       .then(res => {
         console.log(res.data)
