@@ -1,6 +1,5 @@
 import React from "react"
 import { useState } from "react"
-/* import { useForm } from 'react-hook-form' */
 import Axios from 'axios'
 import { useAuth0 } from "@auth0/auth0-react";
 
@@ -19,14 +18,12 @@ export const Tests = () => {
     e.preventDefault();
     let data_array = Object.values(data);
 
-    console.log(data_array);
     for (let i = 0; i < 20; i++) {
       if (data_array[i] % 2 === 0)
         my_array.push(0);
       else
         my_array.push(1);
     }
-    console.log(my_array);
 
 
     Axios.post(url, {
@@ -34,9 +31,16 @@ export const Tests = () => {
       email: "rafa@rafa.com"
     })
       .then(res => {
-        console.log(res.data)
+        let res_array = Object.values(res.data)
+        console.log(res_array[1])
+        console.log(res.data);
+        const $divId = document.getElementById("test-results");
+        const $form = document.getElementById("hook-form");
+        $form.style.display = "none";
+        $divId.innerHTML = `
+          <h1>Resultados Tests</h1>
+        `;
       })
-
   }
 
   function handle(e) {
@@ -626,7 +630,13 @@ export const Tests = () => {
 
           <button type="submit" form="hook-form" className="btn btn-dark btn-form">Enviar Formulario</button>
         </form>
-      </div>
+
+
+        <div id="test-results">
+          
+        </div>
+          
+        </div>
     )
   );
 };
