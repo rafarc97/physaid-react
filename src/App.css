@@ -116,6 +116,15 @@ html{
   display: block;
 } */
 
+.hidden-usermail{
+  display: none;
+}
+
+.btn.btn-dark.btn-form{
+  background-color: #84E49F;
+  color: #333;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
