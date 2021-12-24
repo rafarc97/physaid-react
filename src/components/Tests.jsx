@@ -13,6 +13,12 @@ export const Tests = () => {
   const [data, setData] = useState({
   })
 
+  function handle(e) {
+    const newdata = { ...data }
+    newdata[e.target.id] = e.target.value
+    setData(newdata)
+  }
+
   function submit(e) {
     let my_array = [];
     e.preventDefault();
@@ -28,28 +34,42 @@ export const Tests = () => {
 
     Axios.post(url, {
       tests: my_array,
-      email: "rafa@rafa.com"
+      email: `${user.email}`
     })
       .then(res => {
         let res_array = Object.values(res.data)
         console.log(res_array[1])
+        console.log(res_array[0][1])
+
+        let vigorexia = false;
+        let bulimia = false;
+        let anorexia = false;
+
+        for(let i = 0; i < res_array[0].length; i++){
+          if(res_array[0][i] === "vigorexia")
+            vigorexia = true;
+          if(res_array[0][i] === "anorexia")
+            anorexia = true;
+          if(res_array[0][i] === "bulimia")
+            bulimia = true;
+        }
+
         console.log(res.data);
         const $divId = document.getElementById("test-results");
         const $form = document.getElementById("hook-form");
         $form.style.display = "none";
+
         $divId.innerHTML = `
-          <h1>Resultados Tests</h1>
+          <h1>Resultados del Test</h1>
+          <p> Hemos detectado que tienes problemas de: <p/>
+          Vigorexia: ${vigorexia}
+          <br>
+          Anorexia: ${anorexia}
+          Bulimia: ${bulimia}
+          <br>
         `;
       })
   }
-
-  function handle(e) {
-    const newdata = { ...data }
-    newdata[e.target.id] = e.target.value
-    setData(newdata)
-  }
-
-
   return (
 
     isAuthenticated && (
