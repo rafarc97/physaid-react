@@ -73,6 +73,7 @@ export const Tests = () => {
               type="radio"
               id="1"
               value="1"
+              name="1"
               required
             />
             <br />
@@ -82,6 +83,7 @@ export const Tests = () => {
               type="radio"
               id="2"
               value="2"
+              name="1"
               required
             />
           </div>
@@ -101,6 +103,7 @@ export const Tests = () => {
               type="radio"
               id="3"
               value="3"
+              name="1"
               required
             />
             <br />
@@ -110,6 +113,7 @@ export const Tests = () => {
               type="radio"
               id="4"
               value="4"
+              name="1"
               required
             />
           </div>
@@ -126,6 +130,7 @@ export const Tests = () => {
               type="radio"
               id="5"
               value="5"
+              name="1"
               required
             />
             <br />
@@ -135,6 +140,7 @@ export const Tests = () => {
               type="radio"
               id="6"
               value="6"
+              name="1"
               required
             />
           </div>
@@ -152,6 +158,7 @@ export const Tests = () => {
               type="radio"
               id="7"
               value="7"
+              name="1"
               required
             />
             <br />
@@ -161,6 +168,7 @@ export const Tests = () => {
               type="radio"
               id="8"
               value="8"
+              name="1"
               required
             />
           </div>
@@ -178,6 +186,7 @@ export const Tests = () => {
               type="radio"
               id="9"
               value="9"
+              name="1"
               required
             />
             <br />
@@ -187,6 +196,7 @@ export const Tests = () => {
               type="radio"
               id="10"
               value="10"
+              name="1"
               required
             />
           </div>
@@ -204,6 +214,7 @@ export const Tests = () => {
               type="radio"
               id="11"
               value="11"
+              name="1"
               required
             />
             <br />
@@ -213,6 +224,7 @@ export const Tests = () => {
               type="radio"
               id="12"
               value="12"
+              name="1"
               required
             />
           </div>
@@ -239,6 +251,7 @@ export const Tests = () => {
               type="radio"
               id="14"
               value="14"
+              name="1"
               required
             />
           </div>
@@ -256,6 +269,7 @@ export const Tests = () => {
               type="radio"
               id="15"
               value="15"
+              name="1"
               required
             />
             <br />
@@ -265,6 +279,7 @@ export const Tests = () => {
               type="radio"
               id="16"
               value="16"
+              name="1"
               required
             />
           </div>
@@ -282,6 +297,7 @@ export const Tests = () => {
               type="radio"
               id="17"
               value="17"
+              name="1"
               required
             />
             <br />
@@ -291,6 +307,7 @@ export const Tests = () => {
               type="radio"
               id="18"
               value="18"
+              name="1"
               required
             />
           </div>
@@ -308,6 +325,7 @@ export const Tests = () => {
               type="radio"
               id="19"
               value="19"
+              name="1"
               required
             />
             <br />
@@ -317,6 +335,7 @@ export const Tests = () => {
               type="radio"
               id="20"
               value="20"
+              name="1"
               required
             />
           </div>
@@ -334,6 +353,7 @@ export const Tests = () => {
               type="radio"
               id="21"
               value="21"
+              name="1"
               required
             />
             <br />
@@ -343,6 +363,7 @@ export const Tests = () => {
               type="radio"
               id="22"
               value="22"
+              name="1"
               required
             />
           </div>
@@ -369,6 +390,7 @@ export const Tests = () => {
               type="radio"
               id="24"
               value="24"
+              name="1"
               required
             />
           </div>
@@ -386,6 +408,7 @@ export const Tests = () => {
               type="radio"
               id="25"
               value="25"
+              name="1"
               required
             />
             <br />
@@ -395,6 +418,7 @@ export const Tests = () => {
               type="radio"
               id="26"
               value="26"
+              name="1"
               required
             />
           </div>
@@ -412,6 +436,7 @@ export const Tests = () => {
               type="radio"
               id="27"
               value="27"
+              name="1"
               required
             />
             <br />
@@ -421,6 +446,7 @@ export const Tests = () => {
               type="radio"
               id="28"
               value="28"
+              name="1"
               required
             />
           </div>
@@ -438,6 +464,7 @@ export const Tests = () => {
               type="radio"
               id="29"
               value="29"
+              name="1"
               required
             />
             <br />
@@ -447,6 +474,7 @@ export const Tests = () => {
               type="radio"
               id="30"
               value="30"
+              name="1"
               required
             />
           </div>
@@ -464,6 +492,7 @@ export const Tests = () => {
               type="radio"
               id="31"
               value="31"
+              name="1"
               required
             />
             <br />
@@ -473,6 +502,7 @@ export const Tests = () => {
               type="radio"
               id="32"
               value="32"
+              name="1"
               required
             />
           </div>
@@ -491,6 +521,7 @@ export const Tests = () => {
               type="radio"
               id="33"
               value="33"
+              name="1"
               required
             />
             <br />
@@ -500,6 +531,7 @@ export const Tests = () => {
               type="radio"
               id="34"
               value="34"
+              name="1"
               required
             />
           </div>
@@ -517,6 +549,7 @@ export const Tests = () => {
               type="radio"
               id="35"
               value="35"
+              name="1"
               required
             />
             <br />
@@ -526,6 +559,7 @@ export const Tests = () => {
               type="radio"
               id="36"
               value="36"
+              name="1"
               required
             />
           </div>
@@ -543,6 +577,7 @@ export const Tests = () => {
               type="radio"
               id="37"
               value="37"
+              name="1"
               required
             />
             <br />
@@ -552,6 +587,7 @@ export const Tests = () => {
               type="radio"
               id="38"
               value="38"
+              name="1"
               required
             />
           </div>
@@ -569,6 +605,7 @@ export const Tests = () => {
               type="radio"
               id="39"
               value="39"
+              name="1"
               required
             />
             <br />
@@ -578,6 +615,7 @@ export const Tests = () => {
               type="radio"
               id="40"
               value="40"
+              name="1"
               required
             />
           </div>
