@@ -65,6 +65,7 @@ export const Tests = () => {
           Vigorexia: ${vigorexia}
           <br>
           Anorexia: ${anorexia}
+          <br>
           Bulimia: ${bulimia}
           <br>
         `;
