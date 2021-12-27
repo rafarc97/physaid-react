@@ -23,6 +23,7 @@ input{
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  border-radius: 100%;
 }
 
 .login-bottom{
