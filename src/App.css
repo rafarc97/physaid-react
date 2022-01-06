@@ -15,6 +15,32 @@ html{
   height: 100%;
 }
 
+ol{
+  list-style: inside !important;
+}
+
+#test-results{
+  color:white;
+  margin: 40px;
+}
+
+#test-results h1{
+  margin-bottom: 15px;
+}
+
+#test-results h2{
+  margin: 20px 0;
+}
+
+h1, h2, h3{
+  color: #84E49F;
+}
+
+.generic_socialmedia{
+  margin-top: 20px;
+}
+
+
 input{
   width: 20px;
   height: 18px;

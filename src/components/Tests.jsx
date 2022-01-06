@@ -41,17 +41,85 @@ export const Tests = () => {
         console.log(res_array[1])
         console.log(res_array[0][1])
 
-        let vigorexia = false;
-        let bulimia = false;
-        let anorexia = false;
+        let vigorexia = "";
+        let bulimia = "";
+        let anorexia = "";
 
-        for(let i = 0; i < res_array[0].length; i++){
-          if(res_array[0][i] === "vigorexia")
-            vigorexia = true;
-          if(res_array[0][i] === "anorexia")
-            anorexia = true;
-          if(res_array[0][i] === "bulimia")
-            bulimia = true;
+        for (let i = 0; i < res_array[0].length; i++) {
+          if (res_array[0][i] === "vigorexia")
+            vigorexia = `
+            <h2>Vigorexia</h2>
+            <h3>Relación con las redes sociales</h3>
+            <p> La vigorexia puede venir de compararse con fisicoculturistas o personas de internet que
+            aparentemente tienen muy buen físico pero no todo es real, el ángulo, la cámara, la luz
+            afectan y pueden hacer que una persona se vea con mejor físico y fuera de estas redes
+            sociales esta persona no tenga tan buen físico como parece. En el caso de compararse con
+            fisicoculturistas la persona se puede ver frustrada al intentar conseguir el mismo cuerpo que
+            ellos de manera natural(sin esteroides), pero en cambio los fisicoculturistas de gran talla (por
+            ejemplo competidores que optan por el Mr olympia) alcanzan ese cuerpo con esteroides,
+            entrenadores personales, nutricionistas y muchos tipos de suplementos.</p>
+            <br>
+            <br>
+            <h3>Ayudas Vigorexia</h3>
+            <ol>
+              <li>Intenta limitar su tiempo de entrenamiento, tener suficiente tiempo de entreno para que
+              sea sano, pero no excesivo.</li>
+              <li>En caso de que el afectado use esteroides hacerle entender que es malo para la salud a largo
+              plazo y que reduzca o elimine el uso de ellos.</li>
+              <li>Evitar compararse con otras personas.
+              </li>
+              <li>Intenta que el afectado se dé cuenta de las virtudes de su cuerpo y no solo de los defectos.</li>
+              <li>Evitar que el afectado vea en sus redes sociales solo cuerpos perfectos.(Puede dejar de
+                seguir a fisicoculturistas o personas que venden una imagen irreal)</li>
+              <li>Intentar que el afectado cambie la percepción que tiene de sí mismo y así desarrolle una
+              imagen más realista de el mismo.</li>
+              <li>Reforzar la autoestima del afectado</li>
+              <li>Hacer que el afectado gane seguridad en sí mismo.</li>
+            </ol> 
+            `;
+          if (res_array[0][i] === "anorexia")
+            anorexia = `
+            <h2>Anorexia</h2>
+            <h3>Relación con las redes sociales</h3>
+            <p> Las redes sociales pueden distorsionar la percepción de un físico "ideal" para la persona, ya sea
+            mediante fotos editadas o personas que presumen de su delgadez, por ejemplo, en las redes
+            sociales usan el hagstag "#ana" u otro tipo de hagstag para dar consejos de como adelgazar o
+            esconder comida sin que su familia se dé cuenta.</p>
+            <br>
+            <br>
+            <h3>Ayudas Anorexia</h3>
+            <ol>
+              <li> Evitar que el afectado vea en sus redes sociales personas que le animen a seguir
+              adelgazando (por ejemplo no mirar el hagstag “#ana” o dejar de seguir a gente que de
+              consejos sobre como esconder la comida).</li>
+              <li>Hazle sentir que el físico no lo es todo, resalta sus virtudes mas allá de su físico.</li>
+              <li>La anorexia algunas veces puede venir a raíz de bullying o ciberbullying a través de las
+              redes sociales, por eso, intenta que el contacto del afectado con esas personas sea
+              nulo.
+              </li>
+              <li>Hacer que el afectado cuente con el apoyo de familiares y amigos.</li>
+            </ol> 
+            `;
+          if (res_array[0][i] === "bulimia")
+            bulimia = `
+            <h2>Bulimia</h2>
+            <h3>Relación con las redes sociales</h3>
+            <p> Las redes sociales pueden distorsionar la percepción de un físico "ideal" para la persona,
+            ya sea mediante fotos editadas o personas que presumen de su delgadez, por ejemplo, en
+            las redes sociales usan el hagstag "#MIA" u otro tipo de hagstag para dar consejos de cómo
+            hacerte vomitar o cómo esconderle esta condición a tu familia.</p>
+            <br>
+            <br>
+            <h3>Ayudas Bulimia</h3>
+            <ol>
+              <li>Evitar que el afectado vea en sus redes sociales personas que le animen a seguir
+              haciendo lo que hace (por ejemplo no mirar el hagstag “#mia”).</li>
+              <li>Si el afectado tiene un peso superior a la media y su objetivo es adelgazar podéis
+              contratar nutricionistas para que sepa que se puede adelgazar de forma segura</li>
+              <li>En caso de que el afectado use laxantes, diuréticos o enemas evite que los use.</li>
+              <li>Hazle sentir que el físico no lo es todo, resalta sus virtudes mas allá de su físico.</li>
+            </ol> 
+            `;
         }
 
         console.log(res.data);
@@ -61,13 +129,35 @@ export const Tests = () => {
 
         $divId.innerHTML = `
           <h1>Resultados del Test</h1>
-          <p> Hemos detectado que tienes problemas de: <p/>
-          Vigorexia: ${vigorexia}
+          ${vigorexia}
           <br>
-          Anorexia: ${anorexia}
+          ${anorexia}
           <br>
-          Bulimia: ${bulimia}
+          ${bulimia}
           <br>
+          <h3>Ayudas Genéricas</h3>
+          <ol>
+            <li>En esta aplicación damos un resultado o una ayuda genérica para
+            trastornos concretos, para una ayuda más específica acuda a un
+            médico y que él de su debido diagnóstico y tratamiento</li>
+            <li>Evitar que el afectado vea publicaciones en redes sociales que le
+            haga sentir inferior a otra persona o que le de consejos sobre su
+            trastorno.</li>
+            <li>Muéstrate comprensivo con el afectado y muéstrale la confianza
+            suficiente para que sepa que quieres ayudarle sin tener prejuicios.</li>
+            <li>Acudir a grupos de apoyo, es decir, acudir a personas que ya han
+            pasado ese trastorno alimenticio y puedan entender mejor su
+            situación.</li>
+            <li>Intenta hacerle ver el problema al afectado sin tratarlo de manera
+            brusca.</li>
+          </ol> 
+          <h3 class="generic_socialmedia">Relaciones genéricas con las redes sociales</h3>
+          <p>Las redes sociales pueden distorsionar la percepción de un físico
+          "ideal" para la persona, ya sea mediante fotos editadas o personas que
+          presumen de un físico irreal, la persona afectada se puede sentir
+          inferior y puede intentar conseguir ese físico lo más rápido posible para
+          sentirse aceptado en el entorno de las redes sociales. Esto puede
+          desembocar en trastornos alimenticios.</p>
         `;
       })
   }
@@ -654,10 +744,10 @@ export const Tests = () => {
 
 
         <div id="test-results">
-          
+
         </div>
-          
-        </div>
+
+      </div>
     )
   );
 };
