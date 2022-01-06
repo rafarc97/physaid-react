@@ -5,7 +5,7 @@ export const Contacto = () => {
   return (
     <div className="form-container">
     <form
-      action="https://formsubmit.co/rafaelrodriguezcalvente@gmail.com"
+      action="https://formsubmit.co/physaidpinf@gmail.com"
       method="POST"
       target="_blank"
     >
